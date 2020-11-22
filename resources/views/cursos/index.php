@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Bienvenido a la pagina principal</h1>
+    <h1>Estos son todos los cursos que te ofrecemos</h1>
 </body>
 </html>

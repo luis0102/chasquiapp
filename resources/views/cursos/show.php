@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Bienvenido a la pagina principal</h1>
+    <h1>Bienvenido al curso <?php echo $curso;?></h1>
 </body>
 </html>
