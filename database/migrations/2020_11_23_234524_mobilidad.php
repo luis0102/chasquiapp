@@ -13,7 +13,13 @@ class Mobilidad extends Migration
      */
     public function up()
     {
-        //
+        //tabla vehiculos
+        Schema::create('vehiculos',function(Blueprint $table){
+            $table->id();
+            $table->string('name');
+            $table->timestamps();//create at y update at (horas y fecha)
+        });
+
     }
 
     /**
