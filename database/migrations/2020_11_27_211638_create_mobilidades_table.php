@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Mobilidad extends Migration
+class CreateMobilidadesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,13 @@ class Mobilidad extends Migration
      */
     public function up()
     {
-        //tabla vehiculos
-        Schema::create('vehiculos',function(Blueprint $table){
+        Schema::create('mobilidades', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->timestamps();//create at y update at (horas y fecha)
+            $table->string('placa');
+            $table->text('color');
+            $table->text('chofer');
+            $table->timestamps();
         });
-
     }
 
     /**
@@ -29,6 +29,6 @@ class Mobilidad extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('mobilidades');
     }
 }
